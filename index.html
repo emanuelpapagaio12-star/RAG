@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Intelligence | PDF Knowledge Extraction</title>
+    <meta name="description"
+        content="Discover the power of RAG Intelligence. A high-performance Retrieval-Augmented Generation system for your PDF documents.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #99f2c8;
+            --secondary: #1f4037;
+            --bg: #0e1117;
+            --card-bg: rgba(22, 27, 34, 0.8);
+            --text: #e6edf3;
+            --accent: #238636;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1f4037 0%, #0e1117 100%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), #ffffff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero {
+            padding: 8rem 0;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #8b949e;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            color: var(--bg);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 20px rgba(153, 242, 200, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(153, 242, 200, 0.4);
+        }
+
+        .features {
+            padding: 6rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: border-color 0.3s ease, transform 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: #8b949e;
+        }
+
+        .mockup {
+            margin-top: 5rem;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(153, 242, 200, 0.2);
+        }
+
+        .mockup img {
+            width: 100%;
+            display: block;
+        }
+
+        footer {
+            padding: 4rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .hero {
+                padding: 4rem 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient-bg"></div>
+    <div class="container">
+        <nav>
+            <div class="logo">RAG Intelligence</div>
+            <a href="https://github.com/emanuelpapagaio12-star/RAG" class="cta-button"
+                style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">GitHub Repo</a>
+        </nav>
+
+        <section class="hero">
+            <h1>Unlock the Knowledge in your PDF Documents</h1>
+            <p>Connect your documents to an intelligent chat interface. Using semantic search and FAISS to provide
+                accurate answers instantly.</p>
+            <a href="https://github.com/emanuelpapagaio12-star/RAG#getting-started" class="cta-button">Deploy
+                Locally</a>
+
+            <div class="mockup">
+                <!-- Using a placeholder for now, would be great to have a real screenshot -->
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200&h=600"
+                    alt="RAG Interface Mockup">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>🔍 Semantic Precision</h3>
+                <p>Don't just search for keywords. Our system understands the meaning behind your questions and finds
+                    the right context.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Lightning Fast</h3>
+                <p>Powered by FAISS vector indexing, similarity search takes milliseconds even in massive documents.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛡️ Secure & Private</h3>
+                <p>Run everything in your own environment. Your sensitive data never leaves your infrastructure.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 RAG Intelligence System. Built for Performance.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
