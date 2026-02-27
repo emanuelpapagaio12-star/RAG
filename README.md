@@ -1,5 +1,7 @@
 # 🧠 RAG Intelligence System
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github)](https://emanuelpapagaio12-star.github.io/RAG/)
+
 A high-performance **Retrieval-Augmented Generation (RAG)** application designed to extract and query knowledge from PDF documents with semantic precision.
 
 Built with **Streamlit**, **LangChain**, and **FAISS**, this system provides a seamless interface for interacting with your data locally and securely.
