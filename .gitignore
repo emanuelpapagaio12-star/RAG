@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Project specific
+uploads/
+extracted_text.txt
+*.odt
+*.pdf
+.DS_Store
