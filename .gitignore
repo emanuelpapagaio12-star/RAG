@@ -11,3 +11,7 @@ extracted_text.txt
 *.odt
 *.pdf
 .DS_Store
+
+# Allow specific documentation
+!assets/*.pdf
+!assets/*.odt
